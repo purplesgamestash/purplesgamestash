@@ -107,6 +107,7 @@
     </header>
 
     <h2>Welcome to PurplesGameStash!</h2>
+    <div id="randomMessage" class="random-message"></div>
     <p>ima fix eaglercraft soon, also thanks for blowing the site up cuz bunkr was gone for like 4 days lol also to make up for me adding no games ima add like 5 or 6 in the next coming days</p>
 
     <section id="games" class="game-list">
@@ -509,7 +510,6 @@
                 <h3>Roblox</h3>
                 <h3>WILL RETURN SOON</h3>
             </div>
-            /* i know this is messy, ill let you know when i care */
             <div class="game-card">
               <img src="/img/minecraft.png" alt="I cant upload images to bitbucket and its like 1am so this what u get rn lol">
               <h3>Minecraft 1.8</h3>
@@ -582,5 +582,33 @@
             });
         });
     </script>
+
+    <script>
+    // Array of random messages
+    const randomMessages = [
+        "bunkr for opps fr fr on grimace🙏🗿",
+        "Update schedule? No!",
+        "But he made Graduation....",
+        "Rickycardo is grimace!",
+        "Use code LAZAR in the item shop!",
+        "Use code PEAR in the item shop!",
+        "A&W Hits Different!",
+        "Bing Chilling!",
+        "Whopper Whopper Whopper Whopper, Junior Double Triple Whopper!",
+        "Be careful with the fabric of reality, Garfield!",
+        "Did you know? 1981 was the year that AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!",
+        // Add more messages as needed
+    ];
+
+    // Function to get a random message
+    function getRandomMessage() {
+        const randomIndex = Math.floor(Math.random() * randomMessages.length);
+        return randomMessages[randomIndex];
+    }
+
+    // Display a random message in the random message component
+    const randomMessageContainer = document.getElementById('randomMessage');
+    randomMessageContainer.textContent = getRandomMessage();
+  </script>
 </body>
 </html>
