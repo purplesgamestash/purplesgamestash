@@ -13,7 +13,7 @@
             overflow: hidden; /* Prevent scrollbars */
             font-family: 'Ubuntu', sans-serif;
         }
-        
+
         header {
             background-color: #333;
             color: #fff;
@@ -36,14 +36,14 @@
             color: #fff;
             font-weight: bold;
         }
-        
+
         iframe {
             position: absolute;
             width: 100%;
             height: 80%; /* Adjust the height as needed */
             border: none;
         }
-        
+
         .buttons {
             position: absolute;
             bottom: 10px;
@@ -86,7 +86,7 @@
 
     <script>
         const gameIframe = document.getElementById("gameIframe");
-        
+
         // Toggle fullscreen mode
         function toggleFullscreen() {
             if (!document.fullscreenElement) {
@@ -98,7 +98,7 @@
 
         // Open the game in a new tab using about:blank
         function openInNewTab() {
-            window.open("about:blank").document.write('<iframe src="/gameassets/Dogeminer/index.html" style="width: 100%; height: 100vh; border: none;"></iframe>');
+            window.open("about:blank").document.write('<iframe src="https://teal-salmiakki-900e96.netlify.app/assets/Dogeminer/index.html" style="width: 100%; height: 100vh; border: none;"></iframe>');
         }
     </script>
 </body>
